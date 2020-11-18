@@ -10,7 +10,7 @@ It's a patch for the sass version of bulma installed from npm.
 
 It changes two selectors: 
 - `.number` becomes `.number:not(.token)`
-- `tag:not(body)` becomes `tag:not(body):not(.token)`.
+- `tag:not(body)` becomes `tag:not(body):not(.token)`
 
 However, it's just a workaround and comes at a great cost (duplication of library code).
 
