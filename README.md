@@ -13,18 +13,17 @@ import Prism from "prismjs";
 import "prismjs/plugins/custom-class/prism-custom-class";
 Prism.plugins.customClass.map({ number: "prism-number", tag: "prism-tag" });
 ```
+This is the simpler, recommended workaround.
 
 ## Variant B: Overriding Bulma in sass/scss
 
-This is a patch over the sass version of bulma, when you use the npm package.
+This is a patch over the sass version of bulma. It's only available when you use the npm package.
+
+Use the bulma folder of this repo.
 
 It changes two selectors: 
 - `.number` becomes `.number:not(.token)`
 - `tag:not(body)` becomes `tag:not(body):not(.token)`
-
-However, it's just a workaround and comes at a great cost (duplication of library code).
-
-It's based on `bulma@0.9.1`.
 
 ### Usage
 
